@@ -2,11 +2,32 @@
     padding: 10px;
 }
 
+.container_main_1 {
+    background-color: azure;
+    height: 75vh;
+}
+
+.container_main_2 {
+    background-color: cadetblue;
+    height: 75vh;
+}
+
+.container_main_3 {
+    background-color: gray;
+    height: 75vh;
+}
+
 .footer {
-    background-color: khaki;
-    height: 25vh;
+    color: azure;
+    background-color: black;
+    display: grid;
+    /* height: 25vh; */
 }
 
 .col {
 
+}
+
+.row {
+    display: grid;
 }
