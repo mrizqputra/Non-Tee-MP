@@ -32,6 +32,11 @@
     border-radius: 15%;
 }
 
+.list_film_margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 /* @media screen and (min-width: 576px) {
 
   }
