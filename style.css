@@ -1,9 +1,26 @@
-.main {
+body {
+    font-family: 'Didact Gothic', sans-serif;
     padding: 10px;
 }
 
+.logo_brand_size {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    border-radius: 50%;
+    /* border: 0px solid black; */
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.searchbtn_hover:hover {
+    color: orange;
+}
+
 .container_main_1 {
-    background-color: azure;
+    background-color: white;
     padding: 2%;
 }
 
