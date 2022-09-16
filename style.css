@@ -19,15 +19,17 @@ body {
     color: orange;
 }
 
-.container_main_1 {
+.container_main {
     background-color: white;
     padding: 2%;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 
-.container_main_2 {
+/* .container_main_2 {
     background-color: cadetblue;
     padding: 2%;
-}
+} */
 
 .container_about {
     background-color: gray;
@@ -36,7 +38,7 @@ body {
 }
 
 .footer {
-    color: azure;
+    color: white;
     background-color: black;
     display: grid;
     /* height: 25vh; */
@@ -44,7 +46,7 @@ body {
 
 .ukuran_img {
     /* width: 35vw; */
-    height: 35vh;
+    /* height: 35vh; */
     border: 1px solid black;
     border-radius: 15%;
 }
@@ -52,6 +54,20 @@ body {
 .list_film_margin {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.tD_none {
+    text-decoration: none;
+    color: white;
+}
+
+.tD_none:hover {
+    color: orange;
+}  
+
+h4 {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* @media screen and (min-width: 576px) {
