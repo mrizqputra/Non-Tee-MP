@@ -1,353 +1,965 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <!-- bootstrap runner -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- own css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- insert Cuprum font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-  <!-- bootstrap runner -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <!-- own css -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- insert Cuprum font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo_brand_size" src="Non-Tee Logo.png" alt="Logo" />
+        </a>
+        <a class="navbar-brand" href="index.html"
+          >non<span style="color: orange">tee</span>.tv</a
+        >
+        <button
+          class="navbar-toggler border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Mau Cari Apa ?"
+              aria-label="Search"
+            />
+            <button class="btn searchbtn_hover" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- breadcrumbs -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a class="text-decoration-none" href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Services</li>
+      </ol>
+    </nav>
+    <!-- daftar layanan nontee.tv -->
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img class="logo_brand_size" src="Non-Tee Logo.png" alt="Logo" />
-      </a>
-      <a class="navbar-brand" href="index.html">non<span style="color: orange;">tee</span>.tv</a>
-      <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Mau Cari Apa ?" aria-label="Search" />
-          <button class="btn searchbtn_hover" type="submit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-              viewBox="0 0 16 16">
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-          </button>
-        </form>
+      <div class="title text-center">
+        <h1>
+          Pilih layanan non<span style="color: orange">tee</span>.tv sekarang!
+        </h1>
+      </div>
+      <div class="row grid">
+        <div class="col-6 col-sm-4 col-md-3 list_film_margin">
+          <div class="card h-100">
+            <img
+              src="Nontee Services/1. Value.png"
+              class="card-img-top"
+              alt="film_lib_1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paket Value</h5>
+              <p class="card-text">
+                Paket termurah, cocok untuk kamu yang ingin memulai merasakan
+                layanan non<span style="color: orange">tee</span>.tv.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal_1"
+              >
+                Pesan Sekarang!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 list_film_margin">
+          <div class="card h-100">
+            <img
+              src="Nontee Services/2. Basic.png"
+              class="card-img-top"
+              alt="film_lib_1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paket Basic</h5>
+              <p class="card-text">
+                Paket yang cocok untuk kamu yang akan merasakan layanan non<span
+                  style="color: orange"
+                  >tee</span
+                >.tv dengan program tambahan.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal_2"
+              >
+                Pesan Sekarang!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 list_film_margin">
+          <div class="card h-100">
+            <img
+              src="Nontee Services/3. Premium.png"
+              class="card-img-top"
+              alt="film_lib_1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paket Premium</h5>
+              <p class="card-text">
+                Paket terlengkap dengan penawaran terbaik di non<span
+                  style="color: orange"
+                  >tee</span
+                >.tv.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal_3"
+              >
+                Pesan Sekarang!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 list_film_margin">
+          <div class="card h-100">
+            <img
+              src="Nontee Services/4. Kids.png"
+              class="card-img-top"
+              alt="film_lib_1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kids Add On</h5>
+              <p class="card-text">
+                paket tambahan yang ditawarkan oleh non<span
+                  style="color: orange"
+                  >tee</span
+                >.tv yang cocok dengan anak-anak.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal_4"
+              >
+                Pesan Sekarang!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 list_film_margin">
+          <div class="card h-100">
+            <img
+              src="Nontee Services/5. Movie.png"
+              class="card-img-top"
+              alt="film_lib_1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Movie Add On</h5>
+              <p class="card-text">
+                paket tambahan yang ditawarkan oleh non<span
+                  style="color: orange"
+                  >tee</span
+                >.tv yang cocok bagi kamu penggemar film.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal_5"
+              >
+                Pesan Sekarang!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 list_film_margin">
+          <div class="card h-100">
+            <img
+              src="Nontee Services/6. Japan.png"
+              class="card-img-top"
+              alt="film_lib_1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Japan TV Add On</h5>
+              <p class="card-text">
+                paket tambahan yang ditawarkan oleh non<span
+                  style="color: orange"
+                  >tee</span
+                >.tv yang cocok bagi kamu penggemar siaran tv jepang.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal_6"
+              >
+                Pesan Sekarang!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 list_film_margin">
+          <div class="card h-100">
+            <img
+              src="Nontee Services/7. Sport.png"
+              class="card-img-top"
+              alt="film_lib_1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sport Add On</h5>
+              <p class="card-text">
+                paket tambahan yang ditawarkan oleh non<span
+                  style="color: orange"
+                  >tee</span
+                >.tv yang cocok bagi kamu pecinta olahraga.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal_7"
+              >
+                Pesan Sekarang!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 list_film_margin">
+          <div class="card h-100">
+            <img
+              src="Nontee Services/8. EPL.png"
+              class="card-img-top"
+              alt="film_lib_1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">EPL Add On</h5>
+              <p class="card-text">
+                paket tambahan yang ditawarkan oleh non<span
+                  style="color: orange"
+                  >tee</span
+                >.tv yang cocok bagi kamu pecinta liga inggris.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal_8"
+              >
+                Pesan Sekarang!
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- breadcrumbs -->
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Services</li>
-    </ol>
-  </nav>
-  <!-- daftar layanan nontee.tv -->
-  <div class="container-fluid">
-    <div class="title text-center">
-      <h1>Pilih layanan non<span style="color: orange">tee</span>.tv disini</h1>
-    </div>
-    <div class="row grid">
-      <div class="col-6 col-sm-4 col-md-3 list_film_margin">
-        <div class="card">
-          <img src="Nontee Services/1. Value.png" class="card-img-top" alt="film_lib_1">
-          <div class="card-body">
-            <h5 class="card-title">Paket Value</h5>
-            <p class="card-text">Paket termurah, cocok untuk kamu yang ingin memulai merasakan layanan non<span
-                style="color: orange">tee</span>.tv.</p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal_1">
-              Pesan Sekarang!
+    <!-- modals -->
+
+    <!-- Modal 1-->
+    <div
+      class="modal fade"
+      id="exampleModal_1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Kamu sekarang sedang memesan paket value di non<span
+                style="color: orange"
+                >tee</span
+              >.tv
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Tuliskan Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh: nama@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Isi dengan format, "saya ingin memesan paket value
+                sekarang!"</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Pilih Periode Berlangganan</option>
+              <option value="1">1 Hari</option>
+              <option value="2">7 Hari</option>
+              <option value="3">1 Bulan</option>
+              <option value="4">6 Bulan</option>
+              <option value="5">12 Bulan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" onclick="pesanNow()">
+              Pesan Sekarang
             </button>
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 col-md-3 list_film_margin">
-        <div class="card">
-          <img src="Nontee Services/2. Basic.png" class="card-img-top" alt="film_lib_1">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+    <!-- Modal 2-->
+    <div
+      class="modal fade"
+      id="exampleModal_2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Kamu sekarang sedang memesan paket basic di non<span
+                style="color: orange"
+                >tee</span
+              >.tv
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Tuliskan Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh: nama@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Isi dengan format, "saya ingin memesan paket basic
+                sekarang!"</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Pilih Periode Berlangganan</option>
+              <option value="1">1 Hari</option>
+              <option value="2">7 Hari</option>
+              <option value="3">1 Bulan</option>
+              <option value="4">6 Bulan</option>
+              <option value="5">12 Bulan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" onclick="pesanNow()">
+              Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 col-md-3 list_film_margin">
-        <div class="card">
-          <img src="Nontee Services/3. Premium.png" class="card-img-top" alt="film_lib_1">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+    <!-- Modal 3-->
+    <div
+      class="modal fade"
+      id="exampleModal_3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Kamu sekarang sedang memesan paket premium di non<span
+                style="color: orange"
+                >tee</span
+              >.tv
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Tuliskan Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh: nama@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Isi dengan format, "saya ingin memesan paket premium
+                sekarang!"</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Pilih Periode Berlangganan</option>
+              <option value="1">1 Hari</option>
+              <option value="2">7 Hari</option>
+              <option value="3">1 Bulan</option>
+              <option value="4">6 Bulan</option>
+              <option value="5">12 Bulan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" onclick="pesanNow()">
+              Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 col-md-3 list_film_margin">
-        <div class="card">
-          <img src="Nontee Services/4. Kids.png" class="card-img-top" alt="film_lib_1">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+    <!-- Modal 4-->
+    <div
+      class="modal fade"
+      id="exampleModal_4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Kamu sekarang sedang memesan tambahan paket kids di non<span
+                style="color: orange"
+                >tee</span
+              >.tv
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Tuliskan Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh: nama@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Isi dengan format, "saya ingin menambah paket kids
+                sekarang!"</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Pilih Periode Berlangganan</option>
+              <option value="1">1 Hari</option>
+              <option value="2">7 Hari</option>
+              <option value="3">1 Bulan</option>
+              <option value="4">6 Bulan</option>
+              <option value="5">12 Bulan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" onclick="pesanNow()">
+              Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 col-md-3 list_film_margin">
-        <div class="card">
-          <img src="Nontee Services/5. Movie.png" class="card-img-top" alt="film_lib_1">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+    <!-- Modal 5-->
+    <div
+      class="modal fade"
+      id="exampleModal_5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Kamu sekarang sedang memesan tambahan paket movie di non<span
+                style="color: orange"
+                >tee</span
+              >.tv
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Tuliskan Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh: nama@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Isi dengan format, "saya ingin menambah paket movie
+                sekarang!"</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Pilih Periode Berlangganan</option>
+              <option value="1">1 Hari</option>
+              <option value="2">7 Hari</option>
+              <option value="3">1 Bulan</option>
+              <option value="4">6 Bulan</option>
+              <option value="5">12 Bulan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" onclick="pesanNow()">
+              Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 col-md-3 list_film_margin">
-        <div class="card">
-          <img src="Nontee Services/6. Japan.png" class="card-img-top" alt="film_lib_1">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+    <!-- Modal 6-->
+    <div
+      class="modal fade"
+      id="exampleModal_6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Kamu sekarang sedang memesan tambahan paket japan tv di non<span
+                style="color: orange"
+                >tee</span
+              >.tv
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Tuliskan Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh: nama@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Isi dengan format, "saya ingin menambah paket japan tv
+                sekarang!"</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Pilih Periode Berlangganan</option>
+              <option value="1">1 Hari</option>
+              <option value="2">7 Hari</option>
+              <option value="3">1 Bulan</option>
+              <option value="4">6 Bulan</option>
+              <option value="5">12 Bulan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" onclick="pesanNow()">
+              Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 col-md-3 list_film_margin">
-        <div class="card">
-          <img src="Nontee Services/7. Sport.png" class="card-img-top" alt="film_lib_1">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+    <!-- Modal 7-->
+    <div
+      class="modal fade"
+      id="exampleModal_7"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Kamu sekarang sedang memesan tambahan paket sport di non<span
+                style="color: orange"
+                >tee</span
+              >.tv
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Tuliskan Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh: nama@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Isi dengan format, "saya ingin menambah paket sport
+                sekarang!"</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Pilih Periode Berlangganan</option>
+              <option value="1">1 Hari</option>
+              <option value="2">7 Hari</option>
+              <option value="3">1 Bulan</option>
+              <option value="4">6 Bulan</option>
+              <option value="5">12 Bulan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" onclick="pesanNow()">
+              Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 col-md-3 list_film_margin">
-        <div class="card">
-          <img src="Nontee Services/8. EPL.png" class="card-img-top" alt="film_lib_1">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+    <!-- Modal 8-->
+    <div
+      class="modal fade"
+      id="exampleModal_8"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Kamu sekarang sedang memesan tambahan paket EPL di non<span
+                style="color: orange"
+                >tee</span
+              >.tv
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Tuliskan Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="contoh: nama@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Isi dengan format, "saya ingin menambah paket EPL
+                sekarang!"</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Pilih Periode Berlangganan</option>
+              <option value="1">1 Hari</option>
+              <option value="2">7 Hari</option>
+              <option value="3">1 Bulan</option>
+              <option value="4">6 Bulan</option>
+              <option value="5">12 Bulan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" onclick="pesanNow()">
+              Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- modals -->
 
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal_1">
-    Launch demo modal
-  </button>
-
-  <!-- Modal 1-->
-  <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- footer -->
+    <br />
+    <div class="container-fluid footer text-center">
+      <div class="row grid">
+        <div class="col-12 col-sm-6 col-md-4 mb-2">
+          PT. Nonton Mager
+          <br />
+          Gd. Cahaya Asia Jakarta Lt. 12, Jakarta City, Indonesia.
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2-->
-  <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3-->
-  <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4-->
-  <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5-->
-  <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6-->
-  <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 7-->
-  <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 8-->
-  <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- footer -->
-  <br />
-  <div class="container-fluid footer text-center">
-    <div class="row grid">
-      <div class="col-12 col-sm-6 col-md-4">
-        PT. Nonton Mager
         <br />
-        Gd. Cahaya Asia Jakarta Lt. 12, Jakarta City, Indonesia.
-      </div>
-      <br>
-      <div class="col-12 col-sm-6 col-md-4">
-        <a href="#" class="tD_none">About Us</a>
+        <div class="col-12 col-sm-6 col-md-4 mb-2">
+          <a href="about.html" class="tD_none">About Us</a>
+          <br />
+          <a href="contact.html" class="tD_none">Contact Us</a>
+          <br />
+          <a href="disclaimer.html" class="tD_none">Disclaimer</a>
+        </div>
         <br />
-        <a href="#" class="tD_none">Contact Us</a>
-        <br />
-        <a href="#" class="tD_none">Privacy Policy</a>
+        <div class="col-12 col-sm-6 col-md-4 feedback_marginTop">
+          feedback
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ketikan Feedbackmu"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              onclick="feedBack();"
+            >
+              Kirim
+            </button>
+          </div>
+        </div>
       </div>
-      <br>
-      <div class="col-12 col-sm-6 col-md-4 feedback_marginTop">
-        feedback
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Ketikan Feedbackmu"
-            aria-describedby="button-addon2" />
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-            Kirim
-          </button>
+      <div class="row">
+        <div class="col copyright_marginTop">
+          Copyright &copy; 2022 Nonton Mager
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col copyright_marginTop">Copyright &copy; 2022 Nonton Mager</div>
-    </div>
-  </div>
-</body>
+    <!-- javascript -->
+    <script src="pesanNow.js"></script>
+  </body>
+</html>

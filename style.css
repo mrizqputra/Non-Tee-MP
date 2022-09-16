@@ -1,6 +1,6 @@
 body {
     font-family: 'Didact Gothic', sans-serif;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .logo_brand_size {
@@ -22,8 +22,8 @@ body {
 .container_main {
     background-color: white;
     padding: 2%;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
 }
 
 /* .container_main_2 {
@@ -51,6 +51,10 @@ body {
     border-radius: 15%;
 }
 
+.ukuran_img_ctc {
+    height: 60vh;
+}
+
 .list_film_margin {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -66,6 +70,11 @@ body {
 }  
 
 h4 {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+p {
     text-align: justify;
     text-justify: inter-word;
 }
