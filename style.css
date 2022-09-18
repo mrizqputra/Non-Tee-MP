@@ -19,6 +19,10 @@ body {
     color: orange;
 }
 
+/* .carousel-item img {
+    margin: auto;
+  } */
+
 .container_main {
     background-color: white;
     padding: 2%;
